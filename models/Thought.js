@@ -1,7 +1,7 @@
 const { Schema, model, Types } = require('mongoose');
 
 // Schema to create Thought model
-const postSchema = new Schema(
+const thoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
@@ -52,6 +52,6 @@ const ReactionSchema = new Schema(
   });
 
 // Initialize our Thought model
-const Thoughts = model('thought', postSchema);
+const Thoughts = model('thought', thoughtSchema);
 
 module.exports = Thoughts;
